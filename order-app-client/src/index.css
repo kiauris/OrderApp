@@ -1,0 +1,50 @@
+:root {
+    /* Основные цвета фона */
+    --bg-primary: #121212;     /* Главный фон страницы */
+    --bg-secondary: #1e1e1e;   /* Фон карточек, сайдбаров, меню */
+    --bg-elevated: #2d2d2d;    /* Фон всплывающих окон, модалок */
+
+    /* Цвета текста */
+    --text-primary: #e0e0e0;   /* Основной текст (чуть мягче белого) */
+    --text-secondary: #a0a0a0; /* Второстепенный текст, подсказки */
+    --text-muted: #707070;     /* Неактивный или еле заметный текст */
+
+    /* Акцентные цвета */
+    --accent: #3b82f6;         /* Главный акцент (например, синий) */
+    --accent-hover: #2563eb;   /* Состояние наведения для акцента */
+    --accent-text: #ffffff;    /* Текст на кнопках с акцентным фоном */
+
+    /* Вспомогательные цвета (границы и тени) */
+    --border-color: #333333;   /* Цвет рамок и разделителей */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Тень для элементов */
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: sans-serif;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: var(--accent);
+    color: var(--accent-text);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+}
